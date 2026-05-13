@@ -27,10 +27,8 @@ Test the C Program for the desired output.
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
-
 int main() {
     int pid = fork();
-
     if (pid == 0) { 
         printf("I am child, my PID is %d\n", getpid()); 
         printf("My parent PID is: %d\n", getppid()); 
@@ -100,7 +98,6 @@ printf("Running ps with execlp. Now with path specified\n");
 
 int main() {
     int status;
-    
     printf("Running ps with execl\n");
     if (fork() == 0) {
         execl("ps", "ps", "-f", NULL);
@@ -108,13 +105,11 @@ int main() {
         exit(1);
     }
     wait(&status);
-    
     if (WIFEXITED(status)) {
         printf("Child exited with status: %d\n", WEXITSTATUS(status));
     } else {
         printf("Child did not exit successfully\n");
-    }
-    
+    } 
     printf("Running ps with execlp (without full path)\n");
     if (fork() == 0) {
         execlp("ps", "ps", "-f", NULL);
@@ -122,13 +117,11 @@ int main() {
         exit(1);
     }
     wait(&status);
-    
     if (WIFEXITED(status)) {
         printf("Child exited for execlp with status: %d\n", WEXITSTATUS(status));
     } else {
         printf("Child did not exit successfully\n");
     }
-    
     printf("Done.\n");
     return 0;
 }
