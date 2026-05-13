@@ -52,7 +52,6 @@ int main() {
 
 
 
-
 ##OUTPUT
 <img width="791" height="117" alt="Screenshot 2026-05-13 083656" src="https://github.com/user-attachments/assets/d69f01e7-75de-4000-9a74-003fa0be0914" />
 <img width="641" height="95" alt="Screenshot 2026-05-13 083709" src="https://github.com/user-attachments/assets/ae734453-2474-4c80-8bb5-d618b3003bb0" />
@@ -88,11 +87,17 @@ printf("Running ps with execlp. Now with path specified\n");
                 puts("child did not exit successfully\n");
         printf("Done.\n");
         exit(0);}
-        ```
+
+
+
+```
+````
 ##OUTPUT
 <img width="898" height="748" alt="Screenshot 2026-05-13 083632" src="https://github.com/user-attachments/assets/43831e02-523a-485d-951d-277691d950c6" />
-
+````
+````
 ##C Program to execute Linux system commands using Linux API system calls exec() family
+````
 ```
 #include <stdio.h>
 #include <stdlib.h>
@@ -131,6 +136,13 @@ int main() {
 }
 
 
+
+
+
+
+
+
+
 ```
 
 
@@ -148,14 +160,7 @@ int main() {
 
 
 
-
-
-
-
-
-
-
-
+````
 ##OUTPUT
 <img width="821" height="187" alt="Screenshot 2026-05-13 083727" src="https://github.com/user-attachments/assets/de6fb12b-1b4b-4895-8b61-5f4515ad0bc9" />
 <img width="717" height="113" alt="Screenshot 2026-05-13 083742" src="https://github.com/user-attachments/assets/b7c438cd-c2ad-4eb2-bb0d-a9965abfcff8" />
