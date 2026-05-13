@@ -88,11 +88,12 @@ printf("Running ps with execlp. Now with path specified\n");
                 puts("child did not exit successfully\n");
         printf("Done.\n");
         exit(0);}
-        '''
+        ```
 ##OUTPUT
 <img width="898" height="748" alt="Screenshot 2026-05-13 083632" src="https://github.com/user-attachments/assets/43831e02-523a-485d-951d-277691d950c6" />
 
 ##C Program to execute Linux system commands using Linux API system calls exec() family
+```
 #include <stdio.h>
 #include <stdlib.h>
 #include <sys/types.h>
